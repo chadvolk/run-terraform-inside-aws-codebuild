@@ -27,7 +27,7 @@ phases:
       - echo "}" >> provider-output-backend.tf
       - cat provider-output-backend.tf
       - . /tmp/aws_cred_export.txt && terraform init
-      - cat runterraform.js.py
+      - cd "terraform code"
       - ls -a
   build:
     commands:
