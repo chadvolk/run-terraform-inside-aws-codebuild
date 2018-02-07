@@ -26,7 +26,6 @@ phases:
       - echo "  }" >> provider-output-backend.tf
       - echo "}" >> provider-output-backend.tf
       - cat provider-output-backend.tf
-      - cd "terraform code"
       - pwd
       - . /tmp/aws_cred_export.txt && terraform init
       
