@@ -21,7 +21,7 @@
 			  "Properties": {
 					   "RoleName": { "Fn::Join" : [ ".", [ { "Ref" : "AWS::StackName" }, { "Ref" : "AWS::Region" } , "codebuild" ] ] },
 					    "AssumeRolePolicyDocument": {
-								     "Version" : "2018-02-07",
+								     "Version" : "2012-10-17",
 								     "Statement": [ {
 											     "Effect": "Allow",
 											     "Principal": { "Service": [ "codebuild.amazonaws.com" ] },
@@ -32,7 +32,7 @@
 					     "Policies": [ {
 			               "PolicyName": "adminaccess",
 			               "PolicyDocument": {
-						                  "Version" : "2018-02-07",
+						                  "Version" : "2012-10-17",
 						                  "Statement": [ {
 																 "Action": "*",
 																 "Effect": "Allow",
